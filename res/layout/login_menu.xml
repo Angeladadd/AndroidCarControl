@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/timg7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="198dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="monospace"
+        android:text="CHOOSE AN OPERATION MODE BELOW!"
+        android:textAlignment="center"
+        android:textColor="?android:attr/textColorHint"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toStartOf="@+id/VideoButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="360dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <Button
+            android:id="@+id/dirkeyButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/red_button"
+            android:fontFamily="casual"
+            android:text="Direction Key Control"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <Button
+            android:id="@+id/gravityButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/orange_button"
+            android:fontFamily="casual"
+            android:text="Gravity Sensor Control"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <Button
+            android:id="@+id/gesButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/green_button"
+            android:fontFamily="casual"
+            android:text="Gesture Control"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="253dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+        <Button
+            android:id="@+id/roundButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/blue_button"
+            android:fontFamily="casual"
+            android:text="Round Key Control"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="86dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <Button
+            android:id="@+id/facButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/brown_button"
+            android:fontFamily="casual"
+            android:text="Face Control"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="204dp"
+            tools:layout_editor_absoluteY="103dp" />
+
+        <Button
+            android:id="@+id/voiButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/dark_button"
+            android:fontFamily="casual"
+            android:text="Voice Control"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="204dp"
+            tools:layout_editor_absoluteY="103dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bluetoothInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="casual"
+        android:text="accessing bluetooth.."
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/VideoButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/ic_local_see_black_24dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bluetoothInfo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
